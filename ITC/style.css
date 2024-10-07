@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.2;
+    background-color: #FAF8E9;
+    background-attachment: fixed;
+}   
+
+/* Navigation section starts here*/
+.logo{
+    display: inline-block;
+    margin-top: -7vh;
+}
+.logo img{
+    position: absolute;
+    cursor: pointer;
+    margin-top: -3vh;
+    margin-left: 1vh;
+    width: auto;
+    height: 27vh;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background:white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+.navbar ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: right;
+}
+.navbar ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.navbar ul a:hover{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+.icons i{
+  align-items: center;
+  font-size: 4vh;
+  line-height: 7vh;
+  padding-left: 15px;
+  padding-right: 10px;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+.icons i:hover{
+  color: orange;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: smooth;
+}
+section h1{
+    font-size: 2vh;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    line-height: .5px;
+    justify-content: center;
+    background-color: #FFDF2B;
+    color: black;
+}
+/* Navigation section ends here*/
+
+
+/* login section starts here */
+.container .login-form{
+  position: absolute;
+  width: 40vh;
+  height: 28vh;
+  right: 2vh;
+  top: 10vh;
+  background: white;
+  border-radius: .5vh;
+  padding: 1.5vh;
+  transform: scale(0);
+  cursor: pointer;
+  z-index: 1;
+}
+.container .login-form.active{
+  transform: scale(1);
+}
+.container .login-form .inputBox input{
+  border: none;
+  font-size: 2vh;
+  color: black;
+  padding: 1.5vh;
+  background: #ededed;
+  width: 35vh;
+  text-transform: none;
+  margin: .5rem;
+  cursor: pointer;
+}
+.container .login-form .remember{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding:.5rem;
+}
+.container .login-form .remember label{
+  color: black;
+  font-size: 2vh;
+  cursor: pointer;
+}
+.container .login-form .btn{
+  width: 37vh;
+  background-color: orange;
+  border: none;
+  padding: 1.5vh;
+  cursor: pointer;
+}
+/* login section ends here */
+
+
+/* home first section starts here */
+.home .content h1{
+    z-index: 1;
+    position: absolute;
+    font-size:8vh;
+    color: white;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+.video{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.home button a{
+  position: absolute;
+  padding: 1vh;
+  margin: 5vh;
+  font-size: 2vh;
+  letter-spacing: .3vh;
+  border: none;
+  transform: translate(-50%, -50%);
+  top: 57vh;
+  left: 102vh;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  background-color: orange;
+}
+.home button a:hover{
+  color: white;
+  background-color: black;
+}
+/* home first section ends here */
+
+
+/* home second section starts here*/
+.home-one{
+  background-color: #FAF8E9;
+}
+.home-one .row{
+  position: relative;
+
+}
+.home-one .column h1{
+  justify-content: center;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 200px;
+}
+.home-one .column img{
+  margin-top:-10px;
+  min-height: 100vh;
+}
+.home-one .column span{
+  color: orange;
+}
+.home-one .column p{
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.home-one .column{
+  position: relative;
+  float: left;
+  justify-content: center;
+  width: 50%;
+  padding: 10px;
+  height: 100vh;
+}
+/* home second section ends here*/
+
+
+/* packages first section starts here */
+.packages{
+  background-color: white;
+}
+.packages .column h1{
+  justify-content: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 250px;
+}
+.packages .column span{
+  color: orange;
+}
+.packages .column p{
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.packages .column{
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.packages .explore a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  width: 30px;
+  background-color: #FFDF2B;
+  color: black;
+  transition: .2s ease-in-out;
+}
+.packages .explore a:hover{
+  background-color: black;
+  color: white;
+} 
+.packages .column img{
+  min-height: 100vh;
+}
+/* packages first section ends here */
+
+
+/* packages second section starts here */
+.packages-two{
+  background-color: #FAF8E9;
+}
+.packages-two h1{
+  font-size: 50px;
+  position: absolute;
+  margin-top: -500px;
+  margin-left: 540px;
+}
+.packages-two .box-container{
+  margin-top: 120px;
+}
+.packages-two .box-container .title i{
+  color: red;
+  font-size: 30px;
+  padding-right: 10px;
+}
+.packages-two .box-container .price{
+  background-color: #F9A50B;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.packages-two .box-container .price i{
+  font-size: 30px;
+  padding-left: 30px;
+  position: absolute;
+}
+.price a{
+  color: black;
+}
+.box{
+  background: white;
+  width: 20%;
+  display: inline-block;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .3);
+  margin: 30px;
+  cursor: pointer;
+ }
+ .image img{
+  width: 100%;
+
+ }
+.title h3{
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+ }
+.title p{
+  color: black;
+  padding: 15px;
+  text-align: justify;
+}
+/* packages second section ends here */
+
+
+
+/* packages third section starts here */
+.packages-three{
+  background-color: white;
+}
+.packages-three  h1{
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  margin-top: -500px;
+  margin-left: 500px;
+}
+.packages-three .container{
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.card{
+  background: #F9A50B;
+  width: 20%;
+  display: inline-block;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .3);
+  margin: 30px;
+  cursor: pointer;
+ }
+.image img{
+  width: 100%;
+}
+.packages-three .container .paragraph h3{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+ }
+.paragraph{
+  color: white;
+  padding: 15px;
+  text-align: justify;
+  padding-top: 10px;
+}
+/* packages third section ends here */
+
+
+/* book now section starts here*/
+.booknow{
+  background-color: #FAF8E9;
+}
+.booknow h1{
+  position: absolute;
+  margin-top: -550px;
+  margin-left: 580px;
+  font-weight: 800;
+  font-size: 70px;
+}
+.booknow .row{
+  display: flex;
+  align-items: center;
+}
+.booknow .row .image img{
+  width: 50%;
+  margin-left: -350px;
+  margin-top: 100px;
+}
+.booknow .row form{
+  position: absolute;
+  height: 50vh;
+  margin-left: 900px;
+  margin-top: 50px;
+  padding: 20px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+  border-radius: 10px;
+}
+.booknow .row form .inputBox{
+  padding:10px;
+}
+.booknow .row form input::placeholder{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+.booknow .row form .inputBox input{
+  width: 100%;
+  padding: 5px;
+  border: .1rem solid rgba(0, 0, 0, .1);
+  font-size: 20px;
+  color: black;
+  text-transform: none;
+}
+.booknow form .inputBox p{
+  margin-top: -10px;
+  font-size: 20px;
+  margin-right: 360px;
+  margin-bottom: 5px;
+}
+.booknow form .btn{
+  background-color: orange;
+  color: black;
+  padding: 10px;
+  border: none;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.booknow form .btn:hover{
+  background-color: black;
+  color: white;
+}
+/* book now section ends here*/
+
+
+/* services section starts here*/
+.services{
+  background-color: white;
+}
+.services h1{
+  position: absolute;
+  margin-top: -500px;
+  margin-left: 650px;
+  font-size: 8vh;
+  font-family: 'Poppins', sans-serif;
+}
+.services .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  margin-top: 100px;
+}
+.services .box-container .box{
+  flex: 30rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 1rem;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transform: .2s linear;
+}
+.services .box-container .box:hover{
+  box-shadow: 0 5px 20px rgba(0, 0, 0,1);
+  padding: 2vh;
+}
+.services .box-container .box i{
+  padding: 1rem;
+  font-size: 60px;
+  color: orange;
+}
+.services .box-container .box h3{
+  font-family: 'Popppins', sans-serif;
+  color: black;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+/* services section ends here*/
+
+
+/* contacts section starts here*/
+.contact{
+  background-color: #FAF8E9;
+}
+.contact .column h1{
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 190px;
+  align-items: center;
+}
+.contact .column img{
+  margin-left: 50px;
+  width: 110%;
+  height: 100vh;
+}
+.contact .column{
+  position: relative;
+  float: left;
+  justify-content: center;
+  width: 50%;
+  padding: 10px;
+  height: 100vh;
+}
+.contact .row form{
+  margin-left: 110px;
+  padding: 20px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+  border-radius: 20px;
+  width: 100%;
+  height: 65vh;
+}
+.contact .row form .inputBox{
+  display: flex;
+  justify-content: space-between;
+  text-transform: none;
+}
+.contact .row form input::placeholder,.contact .row form textarea::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  padding-top: -10px;
+}
+.contact .row form .inputBox input{
+  width: 49%;
+  margin: 12px 0px;
+  font-size: 16px;
+  padding: 8px;
+  background: white;
+  border: none;
+}
+.contact .row form textarea{
+  height: 250px;
+  resize: none;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.button{
+  padding: 10px;
+  background-color: orange;
+  border: none;
+  width: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s linear;
+}
+.button:hover{
+  background-color: black;
+  color: white;
+}
+/* contacts section ends here*/
+
+
+/* footer starts here*/
+.footer{
+  background-color: rgba(0, 0, 0, .1);
+  width: 100%;
+  height: 15vh;
+}
+.footer .content{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+.content-one{
+  display: flex;
+  flex-direction: row;
+}
+.content-one h5{
+  font-size: 18px;
+  font-weight: 100;
+}
+.content-one .gmail{
+  margin-top: 5px;
+  margin-left: 215px;
+}
+.content-one .number{
+  margin-top: 5px;
+  margin-left: 240px;
+}
+.social-menu{
+  display: flex;
+  list-style: none;
+  margin-left:19.5%
+}
+.social-menu i{
+  background-color: black;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+.social-menu i:before {
+display: flex;
+flex-flow: row nowrap;
+  font-weight: 400;
+}
+.social-menu a {
+text-decoration: none;
+  border-radius: 0;
+}
+.fa-facebook:hover{
+  background-color: #3b5998;
+  border-radius: 0;
+}
+.fa-twitter:hover{
+  background-color: #1DA1F2;
+  border-radius: 0;
+}
+.fa-linkedin:hover{
+  background-color: #0072b1;
+  border-radius: 0;
+}
+.fa-instagram:hover{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);;
+  border-radius: 0;
+}
+/* footer ends here*/

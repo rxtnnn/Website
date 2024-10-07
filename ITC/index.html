@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME LINK -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICON LINK -->
+    <link rel="icon" href="images/icons.png"/>
+    
+    <title>Sun Tours Travel Agency</title>
+
+</head>
+<body>
+    <div class="container">
+        <!-- navbar section starts here -->
+            <nav class="navbar">
+            <div class="logo"><a href="#home"><img src="images/logo.png" alt="Sun Tours"></a></div>
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#packages">Packages</a>
+                <a href="#booknow">Book now</a>
+                <a href="#service">Services</a>
+                <a href="#contact">Contact</a>
+            </ul>
+            <div class="icons">
+                <div id="login-btn">
+                    <a href="#home"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <form action="" class="login-form">
+            <div class="inputBox">
+                <input type="text" placeholder="Username" name="user" id="username" required>
+            </div>
+            <div class="inputBox">
+                <input type="password" placeholder="Password" name="password" id="password" required>
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="" id="login-remember">
+                <label for="login-remember">Remember me</label>
+            </div>
+            <input type="submit" class="btn" value="LOGIN" style="font-weight: bold; font-size: 2vh;" onclick="validate()">
+        </form>
+    </div>
+        <!-- navbar section ends here -->
+
+
+        <!-- home first section starts here-->
+        <section id="home" class="home">
+            <div class="video">
+                <video src="images/homebg.mp4" autoplay loop muted></video>
+            </div>
+            <div class="content">
+            <h1>Taking you to the <br> best places in Cebu City</h1>
+            <button class="discover"><a href="#home-one">Discover More</a></button>
+            </div>
+        </section>
+        <!-- home first section ends here-->
+
+
+        <!-- home second section starts here-->
+        <section id="home-one" class="home-one">
+            <div class="row">
+                <div class="column">
+                    <h1>Travel the world <br>through <span>Sun Tours</span></h1>
+                    <p>Sun Tours Travel Agency has been offering the<br>best vacation packages since 2021.</p>
+                    <p> <br> We guarantee that every trip you book with us <br>will be unique and unforgettable.</p>
+                </div>
+                <div class="column">
+                    <img src="images/temple.jpg" alt="Temple">
+                </div>
+            </div>
+        </section>
+        <!-- home second section ends here-->
+
+
+
+        <!-- packages first section starts here -->
+        <section id="packages" class="packages">
+            <div class="row">
+                <div class="column">
+                    <h1>Our <span>Packages</span></h1>
+                    <p>We offer a wide variety of packages for you to choose from <br> depending on your dream destination!</p>
+                    <br>
+                    <div class="explore"><a href="#packages-two" class="explore">Explore</a></div>
+                </div>
+                <div class="column">
+                    <img src="images/packagespic.jpg" alt="Beach">
+                </div>
+            </div>
+        </section>
+        <!-- packages first section ends here -->
+
+
+
+        <!-- packages second section starts here-->
+        <section id="packages-two" class="packages-two">
+        <h1>Sun Tour Packages</h1>
+            <div class="box-container scrollFade">
+                <div class="box">
+                    <div class="image">
+                    <img src="images/cebu.jpg" alt="Cebu Tour">
+                    </div>
+                    <div class="title">
+                        <h3><i class="fas fa-map-marker-alt"></i>Cebu City Tour</h3>
+                        <p>A whole day tour that focuses in Cebu City. Explore the beauty of Cebu City. Witness the history of Cebu with its Spanish and religious influences. See the magnificent views of Sirao Flower Farm.</p>
+                    </div>
+                    <div class="price">
+                        <span>₱1, 890 per person <a href="#booknow"><i class="fas fa-arrow-circle-right"></a></i></span>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div class="image">
+                    <img src="images/kawasan.jpg" alt="Kawasan Falls">
+                    </div>
+                    <div class="title">
+                        <h3> <i class="fas fa-map-marker-alt"></i>Kawasan Falls Tour</h3>
+                        <p>The famous Kawasan falls, with its powerful and cool blue waters, brings magic in anyone’s travel. At Kawasan, you can also hike and jump overfalls. This adventure will surely take your soul and heart away.</p>
+                    </div>
+                    <div class="price">
+                        <span>₱3,090 per person <a href="#booknow"><i class="fas fa-arrow-circle-right"></i></a></span>
+                    </div>
+                    </div>
+                    <div class="box">
+                        <div class="image">
+                        <img src="images/sea.jpg" alt="Pescador Island Hopping">
+                        </div>
+                        <div class="title">
+                            <h3> <i class="fas fa-map-marker-alt"></i>Cayoneering & Pescador Island Hopping</h3>
+                            <p>Enjoy Pescador Island tour! Swim with the turtles & see beautiful corals, and a school of marine life. Experience this under the water tropic feel with our package.</p>
+                        </div>
+                        <div class="price">
+                            <span>₱3,790 per person <a href="#booknow"><i class="fas fa-arrow-circle-right"></a></i></span>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- packages second section ends here-->
+
+
+        <!-- packages third section starts here-->
+        <section id="packages-three" class="packages-three">
+        <h1>Best time to go to Cebu</h1>
+            <div class="container">
+                <div class="card">
+                    <div class="image">
+                    <img src="images/sirao.jpg" alt="Sirao Flower Garden" >
+                    </div>
+                    <div class="paragraph">
+                        <h3>Sirao Flower Garden <br>| January to April</h3>
+                        <p>If you’re planning to go to Cebu to do water activities, the best time to go would be from January to April. 
+                            The weather during these months is ideal because there are fewer chances of rain and it’s not too humid as well.</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="image">
+                    <img src="images/beach.jpg" alt="Beach" >
+                    </div>
+                    <div class="paragraph">
+                        <h3>Dry and Summer Season <br> | May to December</h3>
+                        <p>These months are the ideal time to visit Cebu for warm-weather activities such as swimming, 
+                            diving, canyoneering, and sightseeing. With less rainfall, you can enjoy the outdoor activities and water adventures fully.</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        <img src="images/sinulog.jpg" alt="Sinulog" >
+                        </div>
+                        <div class="paragraph">
+                            <h3>Sinulog Festival | January</h3>
+                            <p>Cebu Province celebrates extravagant festivals, and the Sinulog Festival is the biggest of them all. 
+                                You can witness the colorful Sinulog Festival on the third Sunday of January. To celebrate the patron saint of Cebu </p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- packages third section ends here-->
+
+
+        <!-- book now section starts here-->
+        <section id="booknow" class="booknow">
+            <h1>Book Now</h1>
+            <div class="row">
+                <div class="image">
+                    <img src="images/bnow pic.png" alt="logo">
+                </div>
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" id="place"  placeholder="Place" required>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" id="number"  placeholder="Number of person" required>
+                    </div>
+                    <div class="inputBox" aria-required="true">
+                        <p>Arrivals</p>
+                        <input type="date" style="font-family: 'Poppins', sans serif; font-size: 2vh;">
+                    </div>
+                    <div class="inputBox" aria-required="true">
+                        <p>Leavings</p>
+                        <input type="date" style="font-family: 'Poppins', sans serif; font-size: 2vh;">
+                    </div>
+                    <button class="btn" onclick="confirm()">Book now</button>
+                </form>
+            </div>
+        </section>
+        <!-- book now section ends here-->
+
+
+        <!-- services section starts here -->
+        <section id="service" class="services">
+            <h1>Services</h1>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-hotel">
+                        <h3>Affordable Hotel</h3>
+                    </i>
+                </div>
+                <div class="box">
+                    <i class="fas fa-utensils">
+                        <h3>Foods and Drinks</h3>
+                    </i>
+                </div>
+                <div class="box">
+                    <i class="fas fa-car">
+                        <h3>Car hire</h3>
+                    </i>
+                </div>
+                <div class="box">
+                    <i class="fas fa-plane">
+                        <h3>Flight Reservation</h3>
+                    </i>
+                </div>
+                <div class="box">
+                    <i class="fas fa-hiking">
+                        <h3>Adventures</h3>
+                    </i>
+                </div>
+                <div class="box">
+                    <i class="fas fa-bullhorn">
+                        <h3>Safety Guide</h3>
+                    </i>
+                </div>
+            </div>
+        </section>
+        <!-- services section ends here -->
+
+
+        <!-- contact section starts here -->
+        <section id="contact" class="contact scrollFade">
+            <div class="row scrollFade">
+                <div class="column">
+                    <img src="images/contacspic.png" alt="logo">
+                </div>
+                <div class="column">
+                    <h1>Contact Us</h1>
+                    <form action="">
+                        <div class="inputBox">
+                            <input type="name" placeholder="First name" name="fname" id="firstname" required>
+                            <input type="name" placeholder="Last name" name="lname" id="lastname" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" placeholder="Email" name="email" id="gmail" required>
+                            <input type="tel" placeholder="Contact number" name="tel" id="phone" required>
+                        </div>
+                        <textarea placeholder="Message" name="" id="" cols="30" rows="10" ></textarea>
+                        <button class="button">Send</button>
+                    </form>
+                </div>   
+            </div>  
+        </section>
+        <!-- contact section starts here -->
+
+
+        <!-- footer section starts here -->
+        <div class="footer">
+            <div class="content">
+                <h4>Email</h4>   
+                <h4>Contact Number</h4>
+                <h4>Social Media</h4>    
+             </div>         
+             <div class="content-one">
+                <h5 class="gmail">suntours@gmail.com</h5>
+                <h5 class="number">(123) 456-7890</h5>
+                <ul class="social-menu">
+                    <li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i> </a></li>
+                </ul>
+             </div>
+        </div>
+        <!-- footer section ends here -->
+
+<!-- javascript here -->
+<script src="script.js"></script>
+    
+</body>
+</html>
