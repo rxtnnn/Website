@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body, html{
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    width: 1000px;
+    padding: 50px;
+    margin: 10px;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    margin-top: -50px;
+    font-weight: 800;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    align-items: center;
+}
+.card-one{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    background-color: white;
+    height: 450px;
+}
+.card-one .center{
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+}
+.card-one img{
+    position: relative;
+    left: 115px;
+    height: 120px;
+}
+.images, .image-center{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+.images img{
+    grid-column: 1;
+}
+.position{
+    position: relative;
+    left: 110px;
+}
+.position-third{
+    position: relative;
+    left: 90px;
+}
+.save{
+    width: 60px;
+    height: 60px;
+    background-color: #429486;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    transform: rotate(20deg);
+}
+.save::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border: 5px solid #ffd76d;
+}
+.title-one{
+    border-radius: 15px 15px 0px 0px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.price{
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    font-weight: bold;
+}
+.discount{
+    color: red;
+    text-decoration: line-through;
+}
+.big-price{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+.small-price{
+    font-size: 25px;
+}
+.shipping{
+    text-align: center;
+    text-decoration: underline;
+}
+.cart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 10px 70px 10px;
+    background: linear-gradient(0deg, #b87b21, #ffbd67);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 45px;
+    width: 145px;
+    white-space: nowrap;
+}
+.cart-btn img{
+    position: relative;
+    left: -9px;
+    height: 24px;
+    width: 24px;
+}
+.cart-txt{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cards img{
+    height: 20px;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left: -19px;
+}
+.money-back{
+    margin-top: -4px;
+    background-color: #499A95;
+    height: 42px;
+    border-radius: 0px 0px 15px 15px;
+}
+.money-text{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 12px;
+}
+.three-bots{
+    margin-left: -30px;
+}
+.only{
+    text-align: center;
+}
+.per{
+    text-align: center;
+}
+.card-center{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    height: 490px;
+    background-color: #E3FFFC;
+}
+.six-title{
+    padding: 10px;
+    background: linear-gradient(to right, #5DABE6, #499A96);
+    color: white;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    padding: 5px;
+}
+.card-center h5{
+    text-align: center;
+}
+.six-bots{
+    position: relative;
+    top: 8px;
+    left: 50px;
+    height: 120px;
+    width: 240px;
+}
+.cards-center img{
+    height: 20px;
+    width: 100px;
+    margin-bottom: 16px;
+    margin-left: 95px;
+}
+.position-center{
+    position: relative;
+    left: 130px;
+    top: -35px;
+}
+.supply{
+    font-weight: 500; 
+    font-size: 15px;
+    font-weight: 600;
+}
+.buy{
+    font-weight: 900; 
+    font-size: 14px;
+}
+.free{
+    font-weight: 500; 
+    font-size: 12px;
+}
